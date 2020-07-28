@@ -14,7 +14,3 @@ Feel free to use/fork/etc.
 ```bash
 docker run -d -v ${PWD}/config.ini:/nanominer/config.ini jisleyjr/nanominer
 ```
-
-### Kubernetes
-Future addition
-
