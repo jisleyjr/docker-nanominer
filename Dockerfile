@@ -9,7 +9,7 @@ RUN \
      curl \
      telnet \
      gpg \
-     apt-transport-https &&\
+     apt-transport-https && \
     apt clean && \
     wget https://github.com/nanopool/nanominer/releases/download/v$VER/nanominer-linux-$VER.tar.gz && \
     tar xzvf nanominer-linux-$VER.tar.gz && \

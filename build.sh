@@ -7,7 +7,7 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-DOCKER_project_namespace='dmcanally'
+DOCKER_project_namespace='jisleyjr'
 DOCKER_app_name='nanominer'
 VER=$1
 DOCKER_image_tag_ver=$DOCKER_project_namespace/$DOCKER_app_name:$VER
