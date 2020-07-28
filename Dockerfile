@@ -23,3 +23,4 @@ COPY config.ini /nanominer
 WORKDIR nanominer
 
 # Add in start.up to read env variables
+CMD ["./nanominer"]
