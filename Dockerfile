@@ -1,6 +1,6 @@
 FROM ubuntu:18.04 as base
 
-ARG VER
+ARG VER=1.9.6
 RUN apt-get update -y && \
     apt-get install -yqq \
         ca-certificates \
