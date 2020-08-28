@@ -11,6 +11,12 @@ Feel free to use/fork/etc.
 ## Usage
 ### Basic Usage
 **Be sure to change the config.ini to contain your wallet and email.**
+
+cpuThreads and rigName are configurable via environment variables CPUTHREADS and RIGNAME
 ```bash
-docker run -d -v ${PWD}/config.ini:/nanominer/config.ini jisleyjr/nanominer
+docker run -d \
+    -v ${PWD}/config.ini:/nanominer/config.ini \
+    -e CPUTHREADS=4 \
+    -e RIGNAME=rigname \
+    jisleyjr/nanominer
 ```

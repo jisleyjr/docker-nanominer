@@ -1,6 +1,6 @@
 FROM ubuntu:18.04 as base
 
-ARG VER=1.9.6
+ARG VER=1.10.1
 RUN apt-get update -y && \
     apt-get install -yqq \
         ca-certificates \
@@ -19,8 +19,10 @@ RUN wget https://github.com/nanopool/nanominer/releases/download/v$VER/nanominer
 
 # Bring in the config.ini
 COPY config.ini /nanominer
+COPY startup.sh /nanominer
 
 WORKDIR nanominer
+RUN chmod +x startup.sh
 
 # Add in start.up to read env variables
-CMD ["./nanominer"]
+CMD ["./startup.sh"]
