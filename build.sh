@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 set -x
-VER="1.10.1"
+VER="3.3.7"
 if [ ! $# -ne 1 ]; then
   echo "Using supplied version $1"
   $VER=$1
